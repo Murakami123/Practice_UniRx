@@ -7,20 +7,23 @@ using UnityEngine.EventSystems;
 using UniRx;
 using UniRx.Triggers;	
 
-public class practiceUniRx2 : MonoBehaviour
+public class practiceUniRx2 : ScrollRect
 , IPointerDownHandler
 , IPointerUpHandler 
 , IPointerClickHandler 
-// , IDragHandler
+, IDragHandler
 // , IBeginDragHandler
 // , IEndDragHandler
 ,ISelectHandler
 ,IDeselectHandler
-
 {
 
 
 	Button button;
+
+	private int aaa{
+		set{}
+	}
 
 	void Start()
 	{
